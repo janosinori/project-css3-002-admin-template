@@ -1,0 +1,170 @@
+@font-face{
+    font-family: fontawesome-webfont;
+    src: url("font-awesome-4.7.0/fonts/fontawesome-webfont.ttf") format('truetype'),
+        url("font-awesome-4.7.0/fonts/fontawesome-webfont.woff") format('woff'),
+        url("font-awesome-4.7.0/fonts/fontawesome-webfont.woff2") format('woff2');
+}
+:root{
+    font-family: fontawesome-webfont;
+    font-size: 18px;
+    box-sizing: border-box;
+    background-color: black;
+}
+
+.header--dark{
+    background-color: rgb(51,57,64);
+    color: rgb(236,236,236);
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+}
+
+.header__title{
+    display: inline;
+    font-size: 1.25rem;
+    flex: 16.66%;
+    padding-left:10px;
+}
+
+.header__search{
+    display: inline-flex;
+    background-color: rgb(51,57,64);
+    padding-right: 10px;
+}
+
+.search__input{
+    border-radius: 4px 0 4px 0;
+    padding: 0.375rem 0.75rem 0.375rem 0.75.rem;
+    font-size: 1.2rem;
+    border-color: rgb(51,57,64);
+    padding-right: 10px;
+}
+
+.search__input:focus{
+    border-color: rgb(128,189,255);
+    transition: border-color 0.15s ease-in-out;
+    padding-right: 10px;
+}
+
+.search__btn{
+    background-color: rgb(0,123,255);
+    text-align: center;
+    font-size: 1.25rem;
+    padding-right: 10px;
+}
+
+.top__menu{
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    flex-basis: 83.33%;
+}
+
+.main__nav{
+    background-color: rgb(33,37,41);
+    color:rgb(236,236,236);
+    flex: 100%;
+}
+
+.menu__angle-right{
+    position: absolute;
+    right: 10px;
+}
+
+.main__breadcrumb{
+    background-color: rgb(233,236,239);
+    border-radius: 0.25rem;
+    padding: 1rem 1.5rem 1rem 1.5rem;
+}
+
+.main__cards{
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    padding-top: 20px;
+}
+
+.main__card{
+    flex-basis: 22%;
+    border-radius: 4px;
+    position: relative;
+    color:rgb(236,236,236);
+}
+
+.main__card--blue{
+    background-color: rgb(0,123,255);  
+}
+.main__card--yellow {
+    background-color: rgb(255,193,7);
+}
+    
+.main__card--green {
+    background-color: rgb(40,167,69);
+} 
+.main__card--red { 
+    background-color: rgb(220,53,69);
+}
+
+.card__top{
+    border-radius: 0.25rem 0.25rem 0 0;
+    padding: 30px 10px 30px 10px;
+    border-bottom: solid rgba(0, 0, 0, 0.1) 1px;
+}
+
+.card__bottom{
+    border-radius: 0 0 0.25rem 0.25rem;
+    padding: 15px 10px 15px 10px;  
+}
+
+.card__top:hover{
+    transition: background-color 0.3s ease-in-out;
+    background-color: darkblue;
+}
+
+.card__bottom:hover {
+    transition: background-color 0.3s ease-in-out;
+    background-color: darkblue;
+}
+
+.cards__angle-right{
+    position: absolute;
+    right: 10px;
+}
+.content{
+    flex: 83.33%;
+    background-color: rgb(255, 255, 255);
+    padding: 25px;
+}
+
+main{
+    display: flex;
+}
+
+aside{
+    display: flex;
+    flex:16.66%;
+    height: 90vh;
+}
+
+li{
+    padding: 10px 0 10px 0;
+    color: rgb(122, 127, 133);
+}
+
+.only_pc{
+    color:inherit;
+    text-decoration: none;
+}
+
+@media screen and (max-width: 700px) {
+    .main__card{
+        width: 100%;
+    }
+    .main__cards{
+        flex-direction: column;
+    }
+    .only_pc{
+        display: none;
+    }
+}
+
